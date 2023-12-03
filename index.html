@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="message-block">
+            <h2 class="alert"></h2>
+            <p>Tap to remove</p>
+        </div>
+        <div class="menu">
+            <div class="console-btn">
+                <img src="./console.png" alt="console">
+            </div>
+            <div class="console-content">
+                <ul>
+                    <li id="home">Play</li>
+                    <li id="record">Your scores</li>
+                </ul>
+            </div>
+        </div>
+        <div class="screen1">
+            <div class="main-text">
+                <label for="duration">Game Duration (seconds)</label>
+                <input type="number" id="duration" value="10">
+
+            </div>
+
+            <div id="game-container">
+                <button id="startGameBtn">Start Game</button>
+            </div>
+            <div>
+                <span id="score">Score: 0</span>
+                <span id="timer">Time: 10</span>
+                <select name="select" id="select">
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                    <option value="Beast mode">Beast mode</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="screen2">
+            <div class="last-score">
+                <h2>Last score</h2>
+                <ul class="last-scores"></ul>
+            </div>
+            <div class="history">
+                <h2>History of your scores</h2>
+                <ul class="historys"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="/main2.js"></script>
+</body>
+
+</html>
